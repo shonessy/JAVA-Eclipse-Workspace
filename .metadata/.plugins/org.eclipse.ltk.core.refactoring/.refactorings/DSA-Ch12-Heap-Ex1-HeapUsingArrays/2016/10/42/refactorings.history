@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;DSA-Ch12-Heap-Ex1-HeapUsingArrays&apos;&#x0D;&#x0A;- Original project: &apos;DSA-Ch12-Heap-Ex1-HeapUsingArrays&apos;&#x0D;&#x0A;- Original element: &apos;Emplyee.java&apos;" description="Delete element" element1="/src&lt;{Emplyee.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1476011834550" subPackages="false" version="1.0"/>
+</session>

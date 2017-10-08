@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test2_ReadLine {
+
+	public static void main(String[] args) throws IOException{
+
+		String inputs[]=new String[100];
+		BufferedReader brin=null;
+		
+		System.out.println("Unesite linije teksa: ");
+		brin=new BufferedReader(
+				new InputStreamReader(System.in));
+		String s;
+		int i=0;
+		while( !(s=brin.readLine()).equals("stop") ){
+			inputs[i++]=s;
+		}
+		
+		System.out.println("\nUnijeli ste");
+		for(int j=0; j<i; j++)
+			System.out.println(inputs[j]);
+		
+		
+		
+	}
+
+}

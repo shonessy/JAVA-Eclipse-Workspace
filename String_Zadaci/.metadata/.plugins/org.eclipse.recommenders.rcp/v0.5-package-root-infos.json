@@ -1,0 +1,171 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "28e68708eac9d3417733acc22fa8122cfd79f4dc",
+    "jarFileModificationDate": "2015-04-16T10:30:13+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0522b7978ff0494e6ec49ce846841c394a328940",
+    "jarFileModificationDate": "2015-04-16T10:36:04+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4337d12a1ed216c27c80eab4b196b2fb5210f6a3",
+    "jarFileModificationDate": "2015-04-16T10:29:56+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "13f1b361090b36111f733d2d2f6ab6db2c9958ca",
+    "jarFileModificationDate": "2013-12-09T12:50:36+01:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8a5dfebe108665603c3d82db0573f3b54f7461d5",
+    "jarFileModificationDate": "2015-04-16T10:30:03+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7575b46ba6233eae9f1263efbf6f8747aba4f7f2",
+    "jarFileModificationDate": "2015-04-16T16:34:29+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/icedtea-sound.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d95144400b0750b474a21f250c6beed6d798b39d",
+    "jarFileModificationDate": "2015-04-16T10:29:45+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b5e327a1ce0eca208fa6d1095d22d7367fcaf40c",
+    "jarFileModificationDate": "2015-04-16T10:36:04+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bc16e0bdb0e7bbc6e1cb790148e7a17b40b313aa",
+    "jarFileModificationDate": "2015-04-16T10:31:36+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2dfb9fc478ab8198b7ccfab4af83ab901b12f291",
+    "jarFileModificationDate": "2015-04-16T10:36:04+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a7b4862dc872fb25692d8f6cb4cdcb5ea4778bbe",
+    "jarFileModificationDate": "2015-04-16T10:36:04+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f4945c97ac8f5e18356b8ea715ce2fe72af7ea3",
+    "jarFileModificationDate": "2015-04-16T10:32:06+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6902f36bcde390e453295363e517510bc5f98de3",
+    "jarFileModificationDate": "2015-04-16T10:30:10+02:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar",
+    "javaRuntime": true
+  }
+]

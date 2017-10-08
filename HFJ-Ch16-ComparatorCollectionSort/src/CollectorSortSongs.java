@@ -1,0 +1,98 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class CollectorSortSongs {
+
+	private ArrayList<Song> songList=null;
+	BufferedReader br = null;
+	private File songFile = new File("G:/Eclipse JAVA WorkSpace/HFJ-Ch16-CollectionSort/src/Songs.txt");
+	
+	class TitleComparator implements Comparator<Song>{
+		@Override
+		public int compare(Song x, Song y){
+			return x.getTitle().compareTo(y.getTitle());	//String.compareTo(String)
+															//ne Song.compareTo(Song)
+		}
+	}
+	
+	class ArtistComparator implements Comparator<Song>{
+		@Override
+		public int compare(Song x, Song y){
+			return x.getArtist().compareTo(y.getArtist());
+		}
+	}
+	
+	//------------------------------------------------------------------//
+	//constructor
+	public CollectorSortSongs(){
+		try{
+			songList = new ArrayList<>();
+			br = new BufferedReader(new FileReader(songFile));
+		}catch(FileNotFoundException e){
+			System.out.println("Error: Can't find file");
+		}	
+	}
+	//------------------------------------------------------------------//	
+	//add songs to list
+	private void addSongsToList(){
+		try{
+			String song=null;
+			while( (song=br.readLine()) != null ){
+				String delimiteres[]=song.split("/");
+				Song songObj = new Song(delimiteres[0],
+										delimiteres[1], 
+										Integer.parseInt(delimiteres[2]), 
+										Integer.parseInt(delimiteres[3])
+										);
+				songList.add(songObj);
+			}
+		}catch(IOException e){
+			System.out.println("Error: Can't read from file");
+		}
+	}
+	//------------------------------------------------------------------//	
+	//print list
+	private void printSongList(){
+		for(int i=0; i<songList.size(); i++)
+			System.out.println(songList.get(i));
+	}
+	//------------------------------------------------------------------//	
+	//sort list by title
+	private void sortListByTitle(){
+		Collections.sort(songList, new TitleComparator());
+	}
+	//------------------------------------------------------------------//
+	//sort list by artist
+	private void sortListByArtist(){
+		Collections.sort(songList, new ArtistComparator());
+	}
+	//------------------------------------------------------------------//
+
+	
+	//main
+	public static void main(String[] args) {
+		CollectorSortSongs csr = new CollectorSortSongs();
+		csr.addSongsToList();	
+		System.out.println("Ne sortirana lista pjesama: ");
+		csr.printSongList();
+		System.out.println("*****************************************");
+		
+		System.out.println("\nSortirana lista pjesama po nazivu pjesme: ");
+		csr.sortListByTitle();
+		csr.printSongList();
+		System.out.println("*****************************************");
+		
+		System.out.println("\nSortirana lista pjesama po nazivu izvodjaca: ");
+		csr.sortListByArtist();
+		csr.printSongList();
+		System.out.println("*****************************************");
+	}
+	//------------------------------------------------------------------//
+
+}

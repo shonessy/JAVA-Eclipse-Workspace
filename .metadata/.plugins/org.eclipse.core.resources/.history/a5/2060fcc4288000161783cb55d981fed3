@@ -1,0 +1,34 @@
+
+public class TestBubbleSort {
+
+	public static void main(String[] args) {
+		ArrayWithBubbleSort aBubble = new ArrayWithBubbleSort(50);
+		for(int i=0; i<15; i++)
+			aBubble.insert((int)(Math.random()*100));
+		System.out.println("Niz: ");
+		System.out.println(aBubble);
+		System.out.println("Sortirani niz: ");
+		//aBubble.bubbleSort();
+		//aBubble.selectionSort();
+		aBubble.insertionSort();
+		System.out.println(aBubble);
+		
+		ArrayWithBubbleSort testArray=new ArrayWithBubbleSort(10_000);
+		ArrayWithBubbleSort testBubleSort=new ArrayWithBubbleSort(10_000);
+		ArrayWithBubbleSort testSelectionSort=new ArrayWithBubbleSort(10_000);
+		ArrayWithBubbleSort testInsertionSort=new ArrayWithBubbleSort(10_000);
+		
+		for(int i=0; i<testArray.length(); i++)
+			testArray.insert((int)(Math.random()*(testArray.length()-1)));
+		testBubleSort.copyArray(testArray);
+		testSelectionSort.copyArray(testArray);
+		testInsertionSort.copyArray(testArray);
+		
+		long start=System.nanoTime();
+		testBubleSort.bubbleSort();
+		long finish=System.nanoTime();
+		System.out.println("Bubble Sort: " + (finish-start)/1000 + " =>\n\t " + testBubleSort);
+
+	}
+
+}

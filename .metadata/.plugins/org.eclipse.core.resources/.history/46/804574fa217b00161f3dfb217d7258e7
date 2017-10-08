@@ -1,0 +1,16 @@
+import java.awt.Color;
+
+public class Test {
+	private Dog dog1 = new Dog();
+	private Dog dog2 = new Dog("max", Color.BLUE, 74);
+	private Cat cat1 = new Cat("Masa", Color.red, 25); 
+	
+	public  void main(String[] args) {
+		System.out.println(dog1);
+		System.out.println(dog2);
+		System.out.println(cat1);
+		
+
+	}
+
+}

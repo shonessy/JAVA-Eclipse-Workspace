@@ -1,0 +1,89 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class SimpleClient implements Runnable{
+	
+	private Thread t = null;
+	private Socket socket = null;
+	private int port;
+	private String forSending="";
+	private boolean send;
+	private Scanner input;
+	
+	//constructor
+	public SimpleClient(){
+		try{
+			t=new Thread(this);
+			//System.out.println("Client pocinje....");
+			//System.out.print("Unesite port: ");
+			//input=new Scanner(System.in);
+			//port = input.nextInt();
+			//input.close();
+			socket=new Socket("localhost", 5000);
+			//port=5000;
+			send=true;
+		}catch(IOException e){
+			System.out.println("Error: Can't open Client Soclet");
+		}
+	}
+	
+	//run
+	public void run() {
+		//Scanner input = new Scanner(System.in);
+		while(true){
+			try{
+				//System.out.print("client-> ");
+				//forSending=input.nextLine();
+				//input.close();
+				//if(!forSending.equals(""))
+				
+				System.out.println("Zdravo iz Thread-a");
+			
+				Thread.sleep(1000);
+				send=true;
+			}catch(InterruptedException e){
+				System.out.println("Error: Thread for reading can't Sleep");
+			}
+		}//while
+	}//run
+	
+	
+	//startClient
+	public void startClient(){
+		try{
+			
+			PrintWriter pw=new PrintWriter(socket.getOutputStream(), true);
+			int i=0;
+			t.start();
+			
+			while(true){
+				if(send){
+					send=false;
+					System.out.println("Sending: " + forSending);
+					pw.println(54);
+					//if(s.equals("ende"))
+					//	break;
+				}
+				//Thread.sleep(1000);
+				/*try{
+					Thread.sleep(1000);
+				}catch(InterruptedException e){
+					System.out.println("Error: Thread for reading can't Sleep");
+				}*/
+			}
+			
+		}catch(IOException e){
+			System.out.println("Error: Can't open PrintWriter");
+		}/*catch(InterruptedException e){
+			System.out.println("Error: Thread for reading can't Sleep");
+		}*/
+	}
+	
+	public static void main(String[] args) {
+		new SimpleClient().startClient();
+
+	}
+
+}

@@ -1,0 +1,66 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class SimpleClient {
+	
+	
+	private Socket socket = null;
+	private int port;
+	private String forSending="";
+	private boolean send;
+	private Scanner input;
+	private boolean isRunning;
+	
+	//constructor
+	public SimpleClient(){
+		try{
+			System.out.println("Client pocinje....");
+			
+			socket=new Socket("localhost", 5000);
+			//
+			//System.out.print("Unesite port: ");
+			input=new Scanner(System.in);
+			//port = input.nextInt();
+			//input.close();
+			
+			//port=5000;
+			send=false;
+		}catch(IOException e){
+			System.out.println("Error: Can't open Client Soclet");
+		}
+	}
+
+	
+	
+	//startClient
+	public void startClient(){
+		try{
+			//t.start();
+			PrintWriter pw=new PrintWriter(socket.getOutputStream(), true);
+			int i=0;	
+			while(true){
+				if(true){
+					System.out.print("client-> ");
+					forSending=input.nextLine();
+					send=false;
+					System.out.println("\tSending: " + forSending);
+					pw.println(forSending);
+					//pw.flush();
+				}
+				Thread.sleep(50);
+			}
+		}catch(IOException e){
+			System.out.println("Error: Can't open PrintWriter");
+		}catch(InterruptedException e){
+			System.out.println("Error: Thread for reading can't Sleep");
+		}
+	}
+	
+	public static void main(String[] args) {
+		new SimpleClient().startClient();
+
+	}
+
+}

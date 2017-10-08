@@ -1,0 +1,64 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class SortSongs {
+	
+	private ArrayList<String> songList=null;
+	BufferedReader br = null;
+	
+	//------------------------------------------------------------------//
+	//constructor
+	public SortSongs(){
+		try{
+			songList = new ArrayList<>();
+			br = new BufferedReader(new FileReader("Songs.txt"));
+		}catch(FileNotFoundException e){
+			System.out.println("Error: Can't find file");
+		}	
+	}
+	//------------------------------------------------------------------//
+	
+	//add song title to songList
+	private void addToList(String songTitle){
+		songList.add(songTitle);
+	}
+	//------------------------------------------------------------------//
+	
+	//get song Title
+	private void getSongTitlesToList(){
+		try{
+			String song=null;
+			while( (song=br.readLine()) != null ){
+				String delimiteres[]=song.split("/");
+				addToList(delimiteres[0]);
+			}
+		}catch(IOException e){
+			System.out.println("Error: Can't read from file");
+		}
+	}
+	//------------------------------------------------------------------//
+	
+	//print list
+	private void printSongList(){
+		System.out.println(songList);
+	}
+	//------------------------------------------------------------------//
+	
+	//main
+	public static void main(String[] args) {
+		System.out.println("zdravo");
+		SortSongs sr = new SortSongs();
+		sr.getSongTitlesToList();
+		sr.printSongList();
+		
+		
+		
+
+	}
+	//------------------------------------------------------------------//
+
+
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;DSA=Ch4-PriorityQuery&apos;" deleteContents="false" description="Delete resource &apos;DSA=Ch4-PriorityQuery&apos;" element1="/DSA=Ch4-PriorityQuery" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1475603678370"/>&#x0A;<refactoring comment="Delete resource &apos;DSA-Ch11-HashTable-Ex3-Separatehaining&apos;" deleteContents="true" description="Delete resource &apos;DSA-Ch11-HashTable-Ex3-Separatehaining&apos;" element1="/DSA-Ch11-HashTable-Ex3-Separatehaining" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1475874362877"/>
+</session>

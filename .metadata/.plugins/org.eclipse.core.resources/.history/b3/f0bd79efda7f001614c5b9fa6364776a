@@ -1,0 +1,20 @@
+
+public class TestOrderedArray {
+
+	public static void main(String[] args) {
+		
+		OrderedArray oArray=new OrderedArray(50);
+		for(int i=0; i<20; i++)
+			oArray.insert((int)Math.floor(Math.random()*100));
+		System.out.println("Limit niza 50 elemenata");
+		
+		//oArray.insert(8);
+		
+		System.out.println("Duzina niza : " + oArray.length());
+		System.out.println("Niz: ");
+		System.out.println(oArray);
+		
+		
+	}
+
+}

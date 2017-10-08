@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;JBG-Ch7-TwoShape_MethodOverriding&apos;" deleteContents="true" description="Delete resource &apos;JBG-Ch7-TwoShape_MethodOverriding&apos;" element1="/JBG-Ch7-TwoShape_MethodOverriding" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1461017615143"/>&#x0A;<refactoring comment="Delete resource &apos;OjlerNew-7&apos;" deleteContents="true" description="Delete resource &apos;OjlerNew-7&apos;" element1="/OjlerNew-7" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1461166001856"/>
+</session>

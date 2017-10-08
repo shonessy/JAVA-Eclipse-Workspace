@@ -1,0 +1,16 @@
+
+public class TestBubbleSort {
+
+	public static void main(String[] args) {
+		ArrayWithBubbleSort aBubble = new ArrayWithBubbleSort(50);
+		for(int i=0; i<15; i++)
+			aBubble.insert((int)(Math.random()*100));
+		System.out.println("Niz: ");
+		System.out.println(aBubble);
+		System.out.println("Sortirani niz: ");
+		aBubble.bubbleSort();
+		System.out.println(aBubble);
+
+	}
+
+}

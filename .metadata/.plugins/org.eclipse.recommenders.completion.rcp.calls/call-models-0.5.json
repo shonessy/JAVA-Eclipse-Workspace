@@ -1,0 +1,57 @@
+{
+  "/media/shonesy/Dopunski/Eclipse JAVA WorkSpace/RandomNumber/src": {
+    "location": "/media/shonesy/Dopunski/Eclipse JAVA WorkSpace/RandomNumber/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/media/shonesy/Dopunski/Eclipse JAVA WorkSpace/RandomNumber/src\u0027. Skipped."
+  },
+  "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Factorial_Cashing/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Factorial_Cashing/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Factorial_Cashing/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Ojler5/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Ojler5/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Ojler5/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Dog_p73/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Dog_p73/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/Dog_p73/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.1-Rectangular/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.1-Rectangular/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.1-Rectangular/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/HFJ-SimpleDotCom/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/HFJ-SimpleDotCom/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/HFJ-SimpleDotCom/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/HFJ-DotCOm-Final/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/HFJ-DotCOm-Final/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/HFJ-DotCOm-Final/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.3-REct_SubClass_I/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.3-REct_SubClass_I/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.3-REct_SubClass_I/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.5-ComplexNumber/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.5-ComplexNumber/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.5-ComplexNumber/src\u0027. Skipped."
+  },
+  "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.6-Averager/src": {
+    "location": "/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.6-Averager/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/E2.6-Averager/src\u0027. Skipped."
+  }
+}

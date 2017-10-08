@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;E2.3-REct_SubClass_I&apos;" deleteContents="true" description="Delete resource &apos;E2.3-REct_SubClass_I&apos;" element1="/E2.3-REct_SubClass_I" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1448128546880"/>
+</session>

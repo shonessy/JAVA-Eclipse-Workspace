@@ -1,0 +1,28 @@
+
+public class Ojler7 {
+
+	public static void main(String[] args) {
+		int numOfPrimes=1;
+		long prime=2;
+		boolean isPrime;
+		long k=3;
+		while(numOfPrimes!=6){
+			isPrime=true;
+			for(long i=2;i<k;i++){
+				if(k%i==0){
+					isPrime=false;
+					break;
+					}
+				if(isPrime){
+					prime=k;
+					numOfPrimes++;
+					}
+				}
+			k++;
+			}
+		
+		System.out.println(prime);
+		
+	}
+
+}

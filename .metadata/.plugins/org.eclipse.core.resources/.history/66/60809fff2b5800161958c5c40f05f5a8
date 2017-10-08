@@ -1,0 +1,27 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class HelpFile {
+	private static final String path="E:/Java Files/";
+	private	String fileName;
+	
+	//Constructor
+	public HelpFile(String fileName){
+		this.fileName=path + fileName;
+	}
+	
+	//getSelection
+	public String getSelection(){
+		String topic="";
+		System.out.print("Unesite temu za pretragu, 'stop' za prekid: ");
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		try{
+			topic+=br.readLine();
+		}catch(IOException e){
+			System.out.println("Greska u citanju sa konzole");
+		}
+		return topic;
+	}
+	
+}

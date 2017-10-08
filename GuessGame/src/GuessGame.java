@@ -1,0 +1,53 @@
+import java.math.*;
+public class GuessGame {
+	private Player p1,p2,p3;
+	
+	public void startGame(){
+		p1=new Player();
+		p2=new Player();
+		p3=new Player();
+		
+		int targetNumber=(int)(Math.random()*10);
+		
+		boolean p1Right=false;
+		boolean p2Right=false;
+		boolean p3Right=false;
+		System.out.println("Number to guess is: " + targetNumber);
+		
+		while(true){
+			p1.guessNumber();
+			p2.guessNumber();
+			p3.guessNumber();
+			
+			System.out.println("Player 1 guessed: " + p1.guessedNumber);
+			System.out.println("Player 2 guessed: " + p2.guessedNumber);
+			System.out.println("Player 3 guessed: " + p3.guessedNumber);
+			
+			if(targetNumber==p1.guessedNumber)
+				p1Right=true;
+			if(targetNumber==p2.guessedNumber)
+				p2Right=true;
+			if(targetNumber==p3.guessedNumber)
+				p3Right=true;
+			
+			if( p1Right || p2Right || p3Right ){
+				System.out.print("We have a winner: ");
+				if(p1Right)
+					System.out.print("Player 1 ");
+				if(p2Right)
+					System.out.print("Player 2 ");
+				if(p3Right)
+					System.out.print("Player 3 ");
+				System.out.println("\nGAME OVER");
+				break;
+				}
+			else
+				System.out.println("No luck. We have to try again");
+				
+			
+			
+		}
+	
+	}
+
+}

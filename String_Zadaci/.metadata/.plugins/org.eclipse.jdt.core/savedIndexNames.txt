@@ -1,0 +1,20 @@
+INDEX VERSION 1.126+/mnt/01D0F0D738DFA480/Eclipse JAVA WorkSpace/String_Zadaci/.metadata/.plugins/org.eclipse.jdt.core
+1279675953.index
+207581026.index
+1225813827.index
+2913048097.index
+1852715196.index
+518723530.index
+2064907913.index
+3832095003.index
+2031085872.index
+1453598739.index
+3693448964.index
+2387872347.index
+1319378991.index
+749144040.index
+726145421.index
+954478507.index
+1537226622.index
+4201408329.index
+3305932411.index

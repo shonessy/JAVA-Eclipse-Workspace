@@ -1,0 +1,16 @@
+
+public class Test {
+	public static final String fileName="HelpFile.txt";
+	
+	public static void main(String[] args) {
+		HelpFile help1=new HelpFile(fileName);
+		String topic;
+		System.out.println("Unesite temu za pretragu, 'stop' za prekid: ");
+
+		//topic=help1.getSelection();
+		help1.helpOn("break");
+		
+		
+	}
+
+}

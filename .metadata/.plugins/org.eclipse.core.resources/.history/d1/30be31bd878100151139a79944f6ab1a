@@ -1,0 +1,37 @@
+
+public class Ojler3 {
+	public static void main(String[] args){
+		int broj=14;//600851475143l;
+		int maxProst;
+		boolean prosti[]=new boolean[broj+1];
+		for(int i=0;i<=broj;i++)
+			prosti[i]=true;
+		
+		int n=(int)Math.ceil(Math.sqrt(broj));
+		for(int 2=1;i<=n;i++){
+			if(prosti[i]){
+				for(int j=i;j<=broj;j+=i)
+					prosti[j]=false;
+				}
+			}
+		
+		for(maxProst=broj;!prosti[maxProst];maxProst--);
+		System.out.println("Najveci prost je: "+maxProst);
+		
+		System.out.print("Spisak prostih je: \n");
+		for(int i=2;i<=broj;i++){
+			//if(prosti[i])
+				System.out.print(i+""+prosti[i]+"\t");
+			}
+		System.out.println();
+		
+		System.out.print("Spisak prostih cinilaca je: \n");
+		for(int i=2;i<=broj;i++){
+			if( prosti[i] && (broj%i==0) )
+				System.out.print(i+"\t");
+			}
+		System.out.println();
+		
+	}
+
+}

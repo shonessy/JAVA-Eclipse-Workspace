@@ -1,0 +1,33 @@
+
+public class Song {
+	
+	private static int songNum=0;
+	
+	private String title,
+				   artist;
+	
+	private int    rating,
+				   bpm;
+	
+	//-----------------------------------------//
+	//constructor
+	public Song(String title, String artist, int rating, int bpm){
+		this.title=title;
+		this.artist=artist;
+		this.rating=rating;
+		this.bpm=bpm;
+		songNum++;
+	}
+	//-----------------------------------------//
+	//toString
+	@Override
+	public String toString(){
+		return "Song_" + songNum + 
+			   "\n\tTitle: " + title +
+			   "\n\tArtist: " + artist + 
+			   "\n\tRating: " + rating +
+			   "\n\tBPM: " + bpm + "\n";
+	}
+	//-----------------------------------------//
+
+}

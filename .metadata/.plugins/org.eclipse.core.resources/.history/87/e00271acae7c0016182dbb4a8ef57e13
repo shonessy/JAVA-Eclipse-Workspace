@@ -1,0 +1,83 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Thread4Client {
+	
+	private Runnable recivingThread=null;
+	private Runnable sendingThread= null;
+			
+	private Socket clientSocket = null;
+	private static int numClients=0;
+	private int clientID;
+	private boolean isRunning;
+	private Scanner input=null;
+	
+	//consturctor
+	public Thread4Client(Socket socket){
+		clientSocket=socket;
+		clientID=++numClients;
+		isRunning=true;
+		System.out.println("Connected - ClientSocket: " + socket);
+		input=new Scanner(System.in);
+		//t=new Thread(this);
+		
+		recivingThread = new Runnable() {			
+			@Override
+			public void run() {
+				 try{
+					 BufferedReader br = new BufferedReader(
+							new InputStreamReader(
+								clientSocket.getInputStream()));
+					 String recived="";
+					 while( isRunning ){
+					 	System.out.println("\nClient_" + clientID + ": " + (recived=br.readLine()));
+					 	System.out.print("Server-> ");
+					 	if(recived.equals("ende"))
+					 		isRunning=false;
+					 	Thread.sleep(100);
+					 }
+				 	System.out.println("*****************************\n");
+				 	}catch(IOException e){
+				 		System.out.println("Error: Can't open Socket or BufferdReader for Client: ");
+				 		e.printStackTrace();
+				 	}catch(InterruptedException e){
+				 		System.out.println("Error: Can't sleep Reciving Thread");
+				 	}
+			}
+		};
+		
+		sendingThread = new Runnable() {		
+			@Override
+			public void run() {
+				try{
+					PrintWriter pw = new PrintWriter(clientSocket.getOutputStream(), true);
+					String send="";
+					while(isRunning){
+						System.out.print("Server-> ");
+					 	send=input.nextLine();
+						pw.println(send);
+					 	Thread.sleep(50);
+					}
+				}catch(IOException e){
+					System.out.println("Error: Can't create PrintWriter");
+				}catch(InterruptedException e){
+			 		System.out.println("Error: Can't sleep Sending Thread");
+			 	}
+				
+				
+			}
+		};
+	}
+	
+	//startClient
+	public void startClient(){
+		//t.start();
+		new Thread(recivingThread).start();
+		new Thread(sendingThread).start();
+	}
+	
+}

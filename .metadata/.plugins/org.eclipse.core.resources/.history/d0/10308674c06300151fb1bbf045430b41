@@ -1,0 +1,58 @@
+
+public class Plata {
+	String imePrez;
+	static float osnovica;
+	float koeficijent;
+	int godineStaza;
+	
+	Plata(){
+		setImePrez(null);
+		setGodineStaza(0);
+		setKoeficijent(0);
+		}
+	Plata(String s, float a, int b){
+		setImePrez(s);
+		setGodineStaza(b);
+		setKoeficijent(a);
+		}
+	
+	public void setImePrez(String s){
+		imePrez=s;
+		}
+	public void setKoeficijent(float a){
+		koeficijent=a;
+		}
+	public void setGodineStaza(int a){
+		godineStaza=a;
+		}
+	public static void setOsnovica(float a){
+		osnovica=a;
+		}
+	
+	float izracunajBrutoDohodak(){
+		return osnovica*koeficijent*(1+godineStaza/100);
+		}
+	float izracunajStopuPoreza(){
+		return (izracunajBrutoDohodak()<400)? (float)0.3 : (float)0.4;
+		}
+	float izracunajPorez(){
+		return izracunajBrutoDohodak()*izracunajStopuPoreza();
+		}
+	float izracunajNeto(){
+		return izracunajBrutoDohodak()-izracunajPorez();
+		}
+	
+	String dajZapis(){
+		String s="";
+		s+=imePrez+"\t" + osnovica+"\t" + koeficijent+"\t" + godineStaza+"\t";
+		s+=izracunajBrutoDohodak()+"\t";
+		s+=izracunajStopuPoreza()+"\t";
+		s+=izracunajPorez()+"\t";
+		s+=izracunajNeto();
+	
+	}
+	
+}	
+
+
+
